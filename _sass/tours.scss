@@ -28,6 +28,10 @@ html, body, {
     position: absolute;
     bottom: 20px;
     right: 20px;
+
+    @media screen and (max-width: 768px) {
+      right: 10px;
+    }
   }
 
   .slick-slide {
@@ -36,14 +40,31 @@ html, body, {
 }
 
 .nav-gallery {
+
   &__item {
     margin-right: 25px;
-    width: 250px !important;
-    height: 180px !important;
+    width: 125px !important;
+    height: 90px !important;
 
     background-position: center center;
     background-size: cover;
+    border: 2px solid rgba(255,255,255,.8);
 
-    // box-shadow: 0 5px 5px rgba(0,0,0,.5);
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 80px !important;
+      height: 60px !important;
+      margin-right: 15px;
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 40px !important;
+      height: 40px !important;
+      margin-right: 10px;
+    }
   }
+
 }
