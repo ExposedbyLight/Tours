@@ -40,7 +40,6 @@
     border: none;
     outline: none;
     background: transparent;
-    z-index: 999;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -80,11 +79,11 @@
 
 .slick-prev
 {
-    left: 50px;
+    left: -25px;
 }
 [dir='rtl'] .slick-prev
 {
-    right: 50px;
+    right: -25px;
     left: auto;
 }
 .slick-prev:before
@@ -203,5 +202,3 @@
     opacity: .75;
     color: black;
 }
-
-

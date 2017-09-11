@@ -24,24 +24,24 @@ html, body, {
     background-size: cover;
   }
 
-  &__nav {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-
-    @media screen and (max-width: 768px) {
-      right: 10px;
-    }
-  }
-
   .slick-slide {
     min-height: 100vh;
   }
 }
 
-.nav-gallery {
+.nav-gallery-wrapper {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 
+  @media screen and (max-width: 768px) {
+    right: 10px;
+  }
+}
+
+.nav-gallery {
   &__item {
+    display: inline-block;
     margin-right: 25px;
     width: 125px !important;
     height: 90px !important;
