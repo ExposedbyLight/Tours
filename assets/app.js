@@ -9,9 +9,10 @@ function init() {
   });
 
   $(".nav-gallery").slick({
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    asNavFor: ".main-gallery",
-    arrows: false
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    arrows: false,
+    focusOnSelect: true,
+    asNavFor: ".main-gallery"
   });
 };

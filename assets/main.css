@@ -408,17 +408,19 @@ html, body {
     height: 100%;
     background-position: center center;
     background-size: cover; }
-  .main-gallery__nav {
-    position: absolute;
-    bottom: 20px;
-    right: 20px; }
-    @media screen and (max-width: 768px) {
-      .main-gallery__nav {
-        right: 10px; } }
   .main-gallery .slick-slide {
     min-height: 100vh; }
 
+.nav-gallery-wrapper {
+  position: absolute;
+  bottom: 20px;
+  right: 20px; }
+  @media screen and (max-width: 768px) {
+    .nav-gallery-wrapper {
+      right: 10px; } }
+
 .nav-gallery__item {
+  display: inline-block;
   margin-right: 25px;
   width: 125px !important;
   height: 90px !important;
