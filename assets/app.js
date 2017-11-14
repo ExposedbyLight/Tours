@@ -2,30 +2,31 @@ $(init);
 
 function init() {
   var main = ".main-gallery";
-  var nav = ".nav-gallery";
+  // var nav = ".nav-gallery";
 
   var mainOptions = {
     slidesToShow: 1,
     slidesToScroll: 1,
+    dots: true
     // arrows: false,
-    asNavFor: nav
+    // asNavFor: nav
   };
-  var navOptions = {
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    arrows: false,
-    focusOnSelect: true,
-    asNavFor: main
-  };
+  // var navOptions = {
+  //   slidesToShow: 4,
+  //   slidesToScroll: 4,
+  //   // arrows: false,
+  //   focusOnSelect: true,
+  //   asNavFor: main
+  // };
 
   $(main).slick(mainOptions);
-  $(nav).slick(navOptions);
+  // $(nav).slick(navOptions);
 
   $(window).resize(throttle(function() {
       $(main).slick("unslick");
-      $(nav).slick("unslick");
+      // $(nav).slick("unslick");
       $(main).slick(mainOptions);
-      $(nav).slick(navOptions);
+      // $(nav).slick(navOptions);
     }, 500));
 };
 
